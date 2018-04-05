@@ -35,6 +35,7 @@ var Counter = React.createClass({
 
     shouldComponentUpdate: function() {
         console.log('Ta metoda sprawdza czy trzeba jeszcze raz przerysowywać komponent (przed wywołaniem metody render)')
+        return true;
     },
 
     componentWillUpdate: function() {
@@ -51,7 +52,7 @@ var Counter = React.createClass({
 
     render: function() {
         return React.createElement('div', {},
-            React.createElement('h3', {}, 'Counter'),
+            React.createElement('h2', {}, 'Counter'),
             React.createElement('span', {}, 'Licznik ' + this.state.counter),
             React.createElement('div', {},
                 React.createElement('button', {onClick: this.increment}, 'Increment'),

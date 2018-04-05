@@ -1,3 +1,12 @@
-#app {
-	margin: 0 auto;
+body {
+	width: 100%;
+	text-align: center;
+}
+
+h2, span {
+	margin: 20px;
+}
+
+button {
+	margin: 5px;
 }
